@@ -1,8 +1,5 @@
 
-#  Advanced Anomaly Detection System (AADS)
-
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🔍 Advanced Anomaly Detection System (AADS)
 
 An end-to-end Machine Learning pipeline designed to monitor real-time data streams and flag statistical irregularities. This system integrates a predictive model with a REST API and a simulation dashboard to visualize anomaly detection as it happens.
 
@@ -12,10 +9,10 @@ An end-to-end Machine Learning pipeline designed to monitor real-time data strea
 
 The project is divided into four core components:
 
-1.  **Model Trainer (\`train_model.py\`):** Script to preprocess data and train the detection algorithm.
-2.  **Inference Engine (\`anomaly_api.py\`):** A Flask/FastAPI backend that serves the trained model via REST endpoints.
-3.  **Real-time Simulator (\`realtime_simulator.py\`):** A script that generates synthetic data streams to test the model's limits.
-4.  **Web Dashboard:** Located in \`/templates\` and \`/statics\`, providing a visual representation of the data flow and anomaly spikes.
+* **Model Trainer (`train_model.py`)**: Script to preprocess data and train the detection algorithm.
+* **Inference Engine (`anomaly_api.py`)**: A Flask/FastAPI backend that serves the trained model via REST endpoints.
+* **Real-time Simulator (`realtime_simulator.py`)**: A script that generates synthetic data streams to test the model's limits.
+* **Web Dashboard**: Located in `templates` and `statics`, providing a visual representation of the data flow and anomaly spikes.
 
 ---
 
@@ -24,12 +21,13 @@ The project is divided into four core components:
 The system evaluates incoming values and assigns a classification based on the learned decision boundary.
 
 ### Sample Detection Logs:
+
 | Timestamp | Data Value | Status | Label |
 | :--- | :--- | :--- | :--- |
-| 21:55:06 | -0.7259 | ✅ Normal | \`model=0\` |
-| 21:55:04 | 0.0103 | ✅ Normal | \`model=0\` |
-| 21:55:03 | -5.3221 | 🚨 Anomaly | \`model=1\` |
-| 21:55:02 | 5.4508 | 🚨 Anomaly | \`model=1\` |
+| 21:55:06 | -0.7259 | ✅ Normal | `model=0` |
+| 21:55:04 | 0.0103 | ✅ Normal | `model=0` |
+| 21:55:03 | -5.3221 | 🚨 Anomaly | `model=1` |
+| 21:55:02 | 5.4508 | 🚨 Anomaly | `model=1` |
 
 ---
 
@@ -37,30 +35,30 @@ The system evaluates incoming values and assigns a classification based on the l
 
 ### 1. Environment Setup
 Clone the repository and initialize a virtual environment:
-\`\`\`bash
+```
 git clone https://github.com/Vbhhacl/advanced-anomaly-detection-system.git
 cd advanced-anomaly-detection-system
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-\`\`\`
+```
 
 ### 2. Install Dependencies
-\`\`\`bash
+```
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. Execution
 First, ensure the model is trained, then start the API and Simulator:
-\`\`\`bash
+```
 python train_model.py
 python anomaly_api.py
 python realtime_simulator.py
-\`\`\`
+```
 
 ---
 
 ## 📂 Project Structure
-\`\`\`text
+```
 ├── statics/             # CSS and JS for the dashboard
 ├── templates/           # HTML templates
 ├── anomaly_api.py       # API for model serving
@@ -69,7 +67,7 @@ python realtime_simulator.py
 ├── requirements.txt     # Project dependencies
 ├── train_model.py       # Model training logic
 └── .gitignore           # Version control exclusions
-\`\`\`
+```
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.x
